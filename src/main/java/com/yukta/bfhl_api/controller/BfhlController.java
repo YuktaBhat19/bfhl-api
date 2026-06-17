@@ -23,4 +23,8 @@ public class BfhlController {
         return ResponseEntity.ok(
                 service.process(request, requestId));
     }
+    @GetMapping("/test")
+    public String test() {
+        return "API Working";
+    }
 }
