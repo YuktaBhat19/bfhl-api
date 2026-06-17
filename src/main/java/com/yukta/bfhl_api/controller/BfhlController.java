@@ -23,10 +23,9 @@ public class BfhlController {
         return ResponseEntity.ok(
                 service.process(request, requestId));
     }
-   
-        @GetMapping("/health")
-        public String health() {
-            return "OK";
-        }
+
+    @GetMapping("/health")
+    public String health() {
+        return "OK";
     }
 }
